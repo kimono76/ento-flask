@@ -5,9 +5,16 @@ app= Flask(__name__)
 
 
 try:
-    pass
+    mongo = pymongo.MongoClient(
+        host='localhost',
+        port=27017,
+        serverSelectionTimeoutMS=1000
+    )
+    #this triggers an exception if cannot connect to DDBB
+    mongo.server_info()
 except:
-    pass
+    print('ERROR - cannot connect to db')
+    
 
 @app.route('/users',methods=['POST'])
 def create_user():
