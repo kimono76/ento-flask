@@ -19,4 +19,10 @@ python server.py
 
 pip install pymongo
 
+echo 'run this command to enable requests from nightgale'
+checknetisolation loopbackexempt -a -p=S-1-15-2-2472482401-1297737560-3464812208-2778208509-1273584065-1826830168-474783446
+
+echo 'install this for making API request from the terminal'
+pip install http-prompt
+
 ```
