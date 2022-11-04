@@ -9,6 +9,8 @@ conda activate qimono-virtual
 
 pip list
 
+pip install -r requirements.txt
+
 pip install flask
 
 touch server.py
