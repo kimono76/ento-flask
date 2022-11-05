@@ -27,4 +27,6 @@ checknetisolation loopbackexempt -a -p=S-1-15-2-2472482401-1297737560-3464812208
 echo 'install this for making API request from the terminal'
 pip install http-prompt
 
+mongod & sleep 5 && cls
+
 ```
